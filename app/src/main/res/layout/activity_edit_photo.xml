@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/frameLayoutEditMai" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/relativeEdit" android:background="@color/backgroundEditActivity" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include android:id="@+id/toolBar" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/toolbar_edit_photo"/>
+        <FrameLayout android:id="@+id/photo_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_above="@+id/rl_container" android:layout_below="@+id/toolBar">
+            <ProgressBar android:layout_gravity="center" android:id="@+id/progress_circular_loading" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="150dp"/>
+            <com.jblabs.lipiyon.photoeditor.PhotoEditorView android:layout_gravity="center" android:id="@+id/imgPhotoEditor" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="15sp" android:textStyle="bold" android:textColor="@color/gnt_gray" android:gravity="center" android:id="@+id/wm" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="লিপিয়ন | Lipion" android:fontFamily="@font/agni"/>
+            </com.jblabs.lipiyon.photoeditor.PhotoEditorView>
+        </FrameLayout>
+        <RelativeLayout android:id="@+id/rl_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <RelativeLayout android:id="@+id/rl_text_tool" android:visibility="gone" android:layout_width="match_parent" android:layout_height="180dp">
+                <androidx.viewpager.widget.ViewPager android:id="@+id/viewpagerTextTools" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/text_tool_bottom_container"/>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/text_tool_bottom_container" android:layout_width="match_parent" android:layout_height="56dp" android:layout_alignParentBottom="true">
+                    <ImageView android:layout_gravity="center_vertical" android:id="@+id/btnBackTextTools" android:background="?attr/selectableItemBackgroundBorderless" android:clickable="true" android:layout_width="50dp" android:layout_height="wrap_content" android:src="@drawable/ic_arrow_back"/>
+                    <com.google.android.material.tabs.TabLayout android:id="@+id/tablayoutTextTools" android:layout_width="match_parent" android:layout_height="match_parent" app:tabGravity="0" app:tabIndicatorColor="@android:color/transparent" app:tabIndicatorHeight="0dp" app:tabMode="0"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/rl_main_tool" android:visibility="visible" android:layout_width="match_parent" android:layout_height="180dp">
+                <androidx.viewpager.widget.ViewPager android:id="@+id/viewpagerImageTools" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/tablayoutImageTools"/>
+                <com.google.android.material.tabs.TabLayout android:id="@+id/tablayoutImageTools" android:layout_width="match_parent" android:layout_height="56dp" android:layout_alignParentBottom="true" app:tabGravity="0" app:tabIndicatorColor="@android:color/transparent" app:tabIndicatorHeight="0dp" app:tabMode="0"/>
+            </RelativeLayout>
+            <RelativeLayout android:orientation="vertical" android:id="@+id/rl_photo_tool" android:background="@color/backgroundEditActivitySecondary" android:visibility="gone" android:layout_width="match_parent" android:layout_height="180dp">
+                <TextView android:textColor="@color/colorWhite" android:gravity="center" android:id="@+id/tvTransparency" android:paddingLeft="8dp" android:paddingRight="8dp" android:layout_width="wrap_content" android:layout_height="45dp" android:text="@string/transparency"/>
+                <SeekBar android:id="@+id/seekbar_photo_transparency" android:paddingRight="8dp" android:layout_width="match_parent" android:layout_height="45dp" android:layout_toRightOf="@+id/tvTransparency"/>
+                <TextView android:textColor="@color/colorWhite" android:gravity="center" android:layout_width="match_parent" android:layout_height="45dp" android:text="@string/rotate" android:layout_toLeftOf="@+id/seekbar_rotate" android:layout_below="@+id/tvTransparency"/>
+                <SeekBar android:id="@+id/seekbar_rotate" android:paddingRight="8dp" android:layout_width="match_parent" android:layout_height="45dp" android:layout_toRightOf="@+id/tvTransparency" android:layout_below="@+id/seekbar_photo_transparency"/>
+                <RelativeLayout android:orientation="vertical" android:id="@+id/rl_color_photo" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/seekbar_rotate">
+                    <com.jblabs.lipiyon.photoeditor.RoundFrameLayout android:id="@+id/btn_picker_color_photo" android:padding="3dp" android:clickable="true" android:layout_width="35dp" android:layout_height="35dp" android:layout_margin="5dp" app:rv_backgroundColor="@color/backgroundEditActivitySecondary" app:rv_cornerRadius="3dp" app:rv_strokeColor="@color/icChecked" app:rv_strokeWidth="2dp">
+                        <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_pencil"/>
+                    </com.jblabs.lipiyon.photoeditor.RoundFrameLayout>
+                    <androidx.recyclerview.widget.RecyclerView android:id="@+id/recycler_color_photo" android:layout_width="match_parent" android:layout_height="45dp" android:layout_toRightOf="@+id/btn_picker_color_photo"/>
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</FrameLayout>

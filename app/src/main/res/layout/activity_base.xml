@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BaseActivity">
+
+    <ScrollView
+        android:background="@drawable/gradient"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:layout_above="@+id/adView">
+        <LinearLayout android:gravity="bottom" android:orientation="vertical" android:id="@+id/online" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="50dp">
+            <TextView android:textSize="50sp" android:textColor="#ffffff" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="80dp" android:text="লিপিয়ন" android:fontFamily="@font/agni"/>
+            <LinearLayout android:gravity="center" android:id="@+id/gallery" android:background="@drawable/path_2060" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true" android:layout_marginStart="20dp" android:layout_marginEnd="20dp">
+                <ImageView android:layout_width="30dp" android:layout_height="30dp" android:src="@drawable/ic_photo2" android:layout_marginEnd="20dp"/>
+                <TextView android:textSize="20sp" android:textColor="#ffffff" android:gravity="start" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="SELECT IMAGE FROM GALLERY" android:fontFamily="@font/font_alegreyasans_bold"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:id="@+id/two" android:background="@drawable/path_2060" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:src="@drawable/path_2060" android:layout_below="@+id/online" android:layout_centerInParent="true" android:layout_marginStart="20dp" android:layout_marginEnd="20dp">
+                <ImageView android:layout_width="30dp" android:layout_height="30dp" android:src="@drawable/ic_collage2" android:layout_marginEnd="20dp"/>
+                <TextView android:textSize="20sp" android:textColor="#ffffff" android:gravity="start" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="SELECT IMAGE FROM ONLINE" android:fontFamily="@font/font_alegreyasans_bold"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:id="@+id/camera" android:background="@drawable/path_2060" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:src="@drawable/path_2060" android:layout_below="@+id/two" android:layout_centerInParent="true" android:layout_marginStart="20dp" android:layout_marginEnd="20dp">
+                <ImageView android:layout_width="30dp" android:layout_height="30dp" android:src="@drawable/ic_camera2" android:layout_marginEnd="20dp"/>
+                <TextView android:textSize="20sp" android:textColor="#ffffff" android:gravity="start" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="OPEN DEVICE CAMERA" android:fontFamily="@font/font_alegreyasans_bold"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginStart="20dp" android:layout_marginEnd="20dp">
+                <View android:background="#ffffff" android:layout_width="match_parent" android:layout_height="2dp" android:layout_weight="0.5" android:layout_marginEnd="15dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" />
+                <TextView android:textSize="16sp" android:textColor="#ffffff" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="JOIN US" android:fontFamily="@font/font_alegreyasans_bold"/>
+                <View android:background="#ffffff" android:layout_width="match_parent" android:layout_height="2dp" android:layout_weight="0.5" android:layout_marginStart="15dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/fbpage" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_below="@+id/three" android:layout_marginStart="20dp" android:layout_marginEnd="20dp">
+                <LinearLayout android:gravity="center" android:layout_gravity="center" android:id="@+id/fbgroup" android:background="@drawable/iphone_xxs12_activity_rectangle13_button_ripple" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <ImageView android:layout_width="30dp" android:layout_height="30dp" android:src="@drawable/fb" android:layout_marginEnd="20dp" app:tint="@color/white"/>
+                    <TextView android:textSize="16sp" android:textColor="#ffffff" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="JOIN LIPION FACEBOOK GROUP" android:fontFamily="@font/font_alegreyasans_bold"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/instapage" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_below="@+id/fbpage" android:layout_marginStart="20dp" android:layout_marginEnd="20dp">
+                <LinearLayout android:gravity="center" android:layout_gravity="center" android:background="@drawable/iphone_xxs12_activity_rectangle13_button_ripple" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <ImageView android:layout_width="30dp" android:layout_height="30dp" android:src="@drawable/insta" android:layout_marginEnd="20dp" app:tint="@color/white"/>
+                    <TextView android:textSize="16sp" android:textColor="#ffffff" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="JOIN LIPION INSTAGRAM PAGE" android:fontFamily="@font/font_alegreyasans_bold"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/rateshare" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginStart="20dp" android:layout_marginEnd="20dp">
+                <LinearLayout android:orientation="horizontal" android:id="@+id/rate" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="0.5" android:layout_marginEnd="5dp">
+                    <LinearLayout android:gravity="center" android:layout_gravity="center" android:background="@drawable/iphone_xxs12_activity_rectangle13_button_ripple" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/three">
+                        <TextView android:textSize="16sp" android:textColor="#ffffff" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="RATE" android:fontFamily="@font/font_alegreyasans_bold"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/share" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="0.5" android:layout_marginStart="5dp">
+                    <LinearLayout android:gravity="center" android:layout_gravity="center" android:background="@drawable/iphone_xxs12_activity_rectangle13_button_ripple" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/three">
+                        <TextView android:textSize="16sp" android:textColor="#ffffff" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="SHARE" android:fontFamily="@font/font_alegreyasans_bold"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        app:adSize="SMART_BANNER"
+        app:adUnitId="@string/BannerG"
+        />
+</RelativeLayout>

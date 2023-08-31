@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/BanglaTextPhotoEditor/app/src/main/res/drawable-v21/$avd_hide_password__0.xml" value="0.1" />
+        <entry key="..\:/BanglaTextPhotoEditor/app/src/main/res/drawable-v21/savd_hide_password__0.xml" value="0.2" />
+        <entry key="..\:/BanglaTextPhotoEditor/app/src/main/res/drawable-v21/savd_show_password__0.xml" value="0.2" />
+        <entry key="..\:/BanglaTextPhotoEditor/app/src/main/res/drawable/abc_btn_borderless_material.xml" value="0.2" />
+        <entry key="..\:/BanglaTextPhotoEditor/app/src/main/res/drawable/abc_btn_check_material.xml" value="0.18229166666666666" />
+        <entry key="..\:/BanglaTextPhotoEditor/app/src/main/res/drawable/abc_btn_radio_material.xml" value="0.1" />
+        <entry key="..\:/BanglaTextPhotoEditor/app/src/main/res/drawable/abc_item_background_holo_dark.xml" value="0.1" />
+        <entry key="..\:/BanglaTextPhotoEditor/app/src/main/res/drawable/abc_list_selector_background_transition_holo_dark.xml" value="0.1" />
+        <entry key="..\:/BanglaTextPhotoEditor/app/src/main/res/drawable/ad_border_charge.xml" value="0.1" />
+        <entry key="..\:/BanglaTextPhotoEditor/app/src/main/res/drawable/admob_close_button_black_circle_white_cross.xml" value="0.1" />
+        <entry key="..\:/BanglaTextPhotoEditor/app/src/main/res/drawable/admob_close_button_white_circle_black_cross.xml" value="0.1" />
+        <entry key="..\:/BanglaTextPhotoEditor/app/src/main/res/drawable/ucrop_ic_next.xml" value="0.16203703703703703" />
+        <entry key="..\:/BanglaTextPhotoEditor/app/src/main/res/font/open_sans.xml" value="0.21076923076923076" />
+        <entry key="..\:/BanglaTextPhotoEditor/app/src/main/res/layout/activity_base.xml" value="0.16979166666666667" />
+        <entry key="..\:/BanglaTextPhotoEditor/app/src/main/res/layout/activity_main.xml" value="0.16979166666666667" />
+        <entry key="..\:/BanglaTextPhotoEditor/app/src/main/res/layout/activity_sample.xml" value="0.18385416666666668" />
+        <entry key="..\:/BanglaTextPhotoEditor/app/src/main/res/layout/activity_searching.xml" value="0.18385416666666668" />
+        <entry key="..\:/BanglaTextPhotoEditor/app/src/main/res/layout/item_color_background.xml" value="0.18385416666666668" />
+        <entry key="..\:/BanglaTextPhotoEditor/app/src/main/res/layout/item_font.xml" value="0.18385416666666668" />
+        <entry key="..\:/BanglaTextPhotoEditor/app/src/main/res/layout/item_image_background2.xml" value="0.18385416666666668" />
+        <entry key="..\:/BanglaTextPhotoEditor/app/src/main/res/layout/item_photo_small.xml" value="0.18385416666666668" />
+        <entry key="..\:/BanglaTextPhotoEditor/app/src/main/res/layout/item_quotes.xml" value="0.18385416666666668" />
+        <entry key="..\:/BanglaTextPhotoEditor/app/src/main/res/layout/item_suggest.xml" value="0.18385416666666668" />
+        <entry key="..\:/BanglaTextPhotoEditor/app/src/main/res/menu/sample_menu.xml" value="0.16822916666666668" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" project-jdk-name="jbr-17" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
