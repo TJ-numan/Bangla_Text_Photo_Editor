@@ -9,10 +9,11 @@ import android.widget.TextView;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-import com.jblabs.lipiyon.C1068R;
-import com.jblabs.lipiyon.photoeditor.PhotoEditor;
+
+import com.example.banglatextphotoeditor.PhotoEditor;
+import com.example.banglatextphotoeditor.R;
+
 import java.util.List;
-import java.util.Objects;
 
 public class EmojiFragment extends Fragment {
     public EmojiListener mEmojiListener;
@@ -23,8 +24,8 @@ public class EmojiFragment extends Fragment {
     }
 
     public View onCreateView(LayoutInflater layoutInflater, ViewGroup viewGroup, Bundle bundle) {
-        View inflate = layoutInflater.inflate(C1068R.layout.fragment_image_emoji, viewGroup, false);
-        RecyclerView recyclerView2 = (RecyclerView) inflate.findViewById(C1068R.C1070id.recyclerEmoji);
+        View inflate = layoutInflater.inflate(R.layout.fragment_image_emoji, viewGroup, false);
+        RecyclerView recyclerView2 = (RecyclerView) inflate.findViewById(R.id.recyclerEmoji);
         this.recyclerView = recyclerView2;
         recyclerView2.setLayoutManager(new GridLayoutManager(getActivity(), 7));
         this.recyclerView.setAdapter(new EmojiAdapter());
@@ -35,14 +36,16 @@ public class EmojiFragment extends Fragment {
         this.mEmojiListener = emojiListener;
     }
 
-    public class EmojiAdapter extends RecyclerView.Adapter<ViewHolder> {
-        List<String> emojis = PhotoEditor.getEmojis((Context) Objects.requireNonNull(EmojiFragment.this.getActivity()));
+    public class EmojiAdapter extends RecyclerView.Adapter<EmojiAdapter.ViewHolder> {
+        List<String> emojis = PhotoEditor.getEmojis((Context) EmojiFragment.this.requireActivity());
 
         public EmojiAdapter() {
         }
 
         public ViewHolder onCreateViewHolder(ViewGroup viewGroup, int i) {
-            return new ViewHolder(LayoutInflater.from(viewGroup.getContext()).inflate(C1068R.layout.item_emoji, viewGroup, false));
+           ViewHolder view = new ViewHolder(LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.item_emoji, viewGroup, false));
+
+           return view;
         }
 
         public void onBindViewHolder(ViewHolder viewHolder, int i) {
@@ -58,8 +61,13 @@ public class EmojiFragment extends Fragment {
 
             public ViewHolder(View view) {
                 super(view);
-                this.textView = (TextView) view.findViewById(C1068R.C1070id.txtEmoji);
-                view.setOnClickListener(
+                this.textView = (TextView) view.findViewById(R.id.txtEmoji);
+                view.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+
+                    }
+                });
                 /*  JADX ERROR: Method code generation error
                     jadx.core.utils.exceptions.CodegenException: Error generate insn: 0x0015: INVOKE  
                       (r2v0 'view' android.view.View)

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dist="http://schemas.android.com/apk/distribution" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:background="#242440" android:layout_width="match_parent" android:layout_height="48dp">
+        <ImageView android:id="@+id/btnBack" android:padding="12dp" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_text_back" style="@style/ActionButton"/>
+        <ImageView android:id="@+id/wmoff" android:clickable="true" android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/wmonnn" android:layout_toRightOf="@+id/btnBack" android:layout_centerInParent="true" android:layout_marginStart="20dp"/>
+        <ImageView android:id="@+id/wmonn" android:visibility="gone" android:clickable="true" android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/wmoff" android:layout_toRightOf="@+id/btnBack" android:layout_centerInParent="true" android:layout_marginStart="20dp"/>
+        <ImageView android:id="@+id/btnAddText_toolbar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_text_add_1" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" style="@style/ActionButton"/>
+        <ImageView android:id="@+id/btnUndo" android:padding="12dp" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_text_undo" android:layout_toLeftOf="@+id/btnRedo" style="@style/ActionButton"/>
+        <ImageView android:id="@+id/btnRedo" android:padding="12dp" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_text_redo" android:layout_toLeftOf="@+id/btnFinish" style="@style/ActionButton"/>
+        <ImageView android:id="@+id/btnFinish" android:padding="12dp" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_text_share" android:layout_alignParentRight="true" android:layout_alignParentEnd="true" style="@style/ActionButton"/>
+    </RelativeLayout>
+</RelativeLayout>
