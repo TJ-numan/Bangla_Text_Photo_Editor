@@ -1,17 +1,15 @@
 package com.example.banglatextphotoeditor;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
-
 import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.LinearLayout;
 import androidx.appcompat.app.ActionBar;
-
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -25,12 +23,7 @@ import com.example.banglatextphotoeditor.model.Sample;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 import java.util.Objects;
-//import com.facebook.ads.AdView;
-//import com.jblabs.lipiyon.C1068R;
-//import com.jblabs.lipiyon.adapter.sample.BackgroundImageAdapter;
-//import com.jblabs.lipiyon.adapter.sample.BackgroundImageAdapter2;
-//import com.jblabs.lipiyon.interfaces.ItemClickListener;
-//import com.jblabs.lipiyon.model.Sample;
+
 
 public class SampleActivity extends AppCompatActivity {
     private LinearLayout adView;
@@ -138,7 +131,7 @@ public class SampleActivity extends AppCompatActivity {
     }
 
     public void sendData(Sample sample) {
-        Intent intent = new Intent(this, EditPhotoActivity.class);
+        Intent intent = new Intent(this, EditText.class);
         intent.putExtra("SampleBackground", sample.getImgSample());
         startActivity(intent);
     }
